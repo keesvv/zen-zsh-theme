@@ -29,4 +29,4 @@ To test if your terminal and font support it, check that all the necessary chara
 - Working directory
 - Elevated (root) privileges (⚡)
 - If the current directory is writable. If not, this icon (🔒) will be displayed.
-- Current VPN status
+- Current VPN status (🛡️)
