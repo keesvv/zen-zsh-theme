@@ -4,6 +4,8 @@
 
 > This project is a fork of [agnoster-zsh-theme](https://github.com/agnoster/agnoster-zsh-theme). You can learn about further customization on the [original project](https://github.com/agnoster/agnoster-zsh-theme).
 
+![Screenshot](img/screenshot.png)
+
 # Compatibility
 
 > This theme **ONLY** functions correctly if you have a [Powerline-patched font](https://github.com/Lokaltog/powerline-fonts) installed on your system.
