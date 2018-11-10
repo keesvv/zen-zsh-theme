@@ -6,6 +6,8 @@
 
 ![Screenshot](img/screenshot.png)
 
+> The above Terminal emulator used is called [Hyper](https://hyper.is). The theme is called [hyper-dark](https://github.com/keesvv/hyper-dark), which is one of my forks.
+
 # Compatibility
 
 > This theme **ONLY** functions correctly if you have a [Powerline-patched font](https://github.com/Lokaltog/powerline-fonts) installed on your system.
