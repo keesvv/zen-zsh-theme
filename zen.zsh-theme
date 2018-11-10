@@ -27,8 +27,10 @@
 typeset -aHg AGNOSTER_PROMPT_SEGMENTS=(
     prompt_status
     prompt_context
+    prompt_vpnstatus
     prompt_virtualenv
     prompt_dir
+    prompt_islocked
     prompt_git
     prompt_end
 )
@@ -139,6 +141,24 @@ prompt_virtualenv() {
     color=cyan
     prompt_segment $color $PRIMARY_FG
     print -Pn " $(basename $VIRTUAL_ENV) "
+  fi
+}
+
+# By @keesvv
+# Check if current directory is locked
+# If so, display a lock icon
+prompt_islocked() {
+  if [[ ! -w $(pwd) ]]; then
+    prompt_segment red yellow $'\ue0a2'
+  fi
+}
+
+# By @keesvv
+# Check if a VPN connection is established
+# If so, display VPN icon
+prompt_vpnstatus() {
+  if [[ ! $(ip tuntap show) == "" ]]; then
+    prompt_segment black black $'\U1F6E1 '
   fi
 }
 
