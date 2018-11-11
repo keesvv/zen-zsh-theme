@@ -135,7 +135,7 @@ prompt_islocked() {
 # If so, display VPN icon
 prompt_vpnstatus() {
     if [[ ! $(ip tuntap show) == "" ]]; then
-        prompt_segment white black $'\uf132'
+        prompt_segment magenta white $'\uf132'
     fi
 }
 
