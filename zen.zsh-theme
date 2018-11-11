@@ -53,7 +53,7 @@ esac
   # what font the user is viewing this source code in. Do not replace the
   # escape sequence with a single literal character.
   # Do not change this! Do not make it '\u2b80'; that is the old, wrong code point.
-  SEGMENT_SEPARATOR=$'\ue0b0'
+  SEGMENT_SEPARATOR=$'\ue602'
 }
 
 # Begin a segment
@@ -102,7 +102,7 @@ prompt_git() {
   local PL_BRANCH_CHAR
   () {
     local LC_ALL="" LC_CTYPE="en_US.UTF-8"
-    PL_BRANCH_CHAR=$'\ue0a0'         # 
+    PL_BRANCH_CHAR=$'\ue725'         # 
   }
   local ref dirty mode repo_path
 
@@ -199,7 +199,7 @@ prompt_hg() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue $CURRENT_FG '%~'
+  prompt_segment blue $CURRENT_FG $'\ue5ff %~'
 }
 
 # Virtualenv: current working virtualenv
@@ -229,7 +229,7 @@ prompt_status() {
 # If so, display a lock icon
 prompt_islocked() {
   if [[ ! -w $(pwd) ]]; then
-    prompt_segment red yellow $'\ue0a2'
+    prompt_segment red yellow $'\uf023'
   fi
 }
 
@@ -238,7 +238,7 @@ prompt_islocked() {
 # If so, display VPN icon
 prompt_vpnstatus() {
   if [[ ! $(ip tuntap show) == "" ]]; then
-    prompt_segment black black $'\U1F6E1 '
+    prompt_segment white black $'\uf132'
   fi
 }
 
@@ -253,7 +253,6 @@ build_prompt() {
   prompt_islocked
   prompt_git
   prompt_bzr
-  # prompt_hg
   prompt_end
 }
 
