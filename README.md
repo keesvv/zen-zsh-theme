@@ -16,7 +16,7 @@ If you have a NerdFonts-patched font installed on your system, make sure you **a
 
 To test if your terminal and font support it, check that all the necessary characters are supported by copying the following command to your terminal: `echo -e "\ue602 \ue725 \ue5ff \uf023 \uf132 \uf0e7 \uf00d \u23fe"`. The result should look like this:
 
-![Character Example](https://gist.githubusercontent.com/agnoster/3712874/raw/characters.png)
+![Font Support](img/fonts.png)
 
 # Features
 
