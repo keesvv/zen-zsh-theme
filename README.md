@@ -4,7 +4,7 @@
 
 > This project is a fork of [agnoster-zsh-theme](https://github.com/agnoster/agnoster-zsh-theme). You can learn about further customization on the [original project](https://github.com/agnoster/agnoster-zsh-theme).
 
-![Screenshot](img/screenshot.png)
+![Screenshot](img/preview.gif)
 
 > The above Terminal emulator used is called [Hyper](https://hyper.is). The theme is called [hyper-dark](https://github.com/keesvv/hyper-dark), which is one of my forks.
 
@@ -22,13 +22,14 @@ To test if your terminal and font support it, check that all the necessary chara
 
 **Zen ZSH displays the following in your prompt:**
 
-- If the previous command failed (✘)
-- user@hostname
+- If the previous command failed (  )
+- If there is a suspended process running in the terminal ( ⏾ )
+- A nice little terminal icon
 - Git status
-  - Branch () or detached head (➦)
+  - Branch (  ) or detached head ( ➦ )
   - Current branch / SHA1 in detached head state
   - Dirty working directory (±, color change)
 - Working directory
-- Elevated (root) privileges (⚡)
-- If the current directory is writable. If not, this icon (🔒) will be displayed.
-- Current VPN status (🛡️)
+- Elevated (root) privileges (  )
+- If the current directory is writable. If not, this icon (  ) will be displayed
+- Current VPN status (  )
